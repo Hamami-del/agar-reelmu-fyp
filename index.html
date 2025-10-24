@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trik FYP Kreator 2025 | By Hamami</title>
+<title>Cara FYP Tiap Post | Rahasia Kreator 2025</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   body {
@@ -12,10 +12,12 @@
     color: #fff;
     text-align: center;
     padding: 40px 20px;
+    overflow-x: hidden;
   }
   h1 {
     font-size: 2em;
     margin-bottom: 10px;
+    animation: fadeInDown 1s ease;
   }
   p {
     font-size: 1.1em;
@@ -27,6 +29,7 @@
     padding: 25px;
     margin-top: 25px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    animation: fadeInUp 1.2s ease;
   }
   .btn {
     display: inline-block;
@@ -38,6 +41,7 @@
     font-weight: 600;
     text-decoration: none;
     transition: 0.3s;
+    animation: pulse 1.5s infinite;
   }
   .btn:hover {
     background: #ff3ea6;
@@ -48,23 +52,117 @@
     color: #ddd;
     margin-top: 30px;
   }
+  .comments {
+    margin-top: 40px;
+    text-align: left;
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    animation: fadeIn 2s ease;
+  }
+  .comment {
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 10px;
+  }
+  .comment strong {
+    color: #ffccf9;
+  }
+  .share-btns {
+    margin-top: 30px;
+  }
+  .share-btn {
+    display: inline-block;
+    margin: 10px;
+    background: #25D366;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .share-btn.fb {
+    background: #1877F2;
+  }
+  .share-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+  .stats {
+    margin-top: 25px;
+    font-size: 1em;
+    color: #ffe6ff;
+    font-weight: 500;
+    animation: fadeIn 1.5s ease;
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+  }
 </style>
 </head>
 <body>
-  <h1>🔥 Trik Rahasia Biar Postingan Kamu FYP!</h1>
+  <h1>🔥 Rahasia Biar Postingan Kamu Auto FYP!</h1>
   <p>Banyak kreator upload tiap hari tapi views tetap sepi 😩  
-  Padahal rahasia biar kontenmu dilihat banyak orang itu sederhana banget.</p>
+  Padahal rahasianya cuma butuh <strong>1 langkah kecil</strong> yang jarang orang tahu!</p>
   
   <div class="card">
-    <h2>💡 Tips Singkat:</h2>
-    <p>Gunakan durasi 7–15 detik, pakai musik tren, dan tambahkan caption yang bikin penasaran 😏  
-    Tapi... ada 1 rahasia yang paling ampuh, dan jarang dibocorin orang 😳</p>
+    <h2>💡 Trik Singkat 2025:</h2>
+    <p>Gunakan durasi 7–15 detik, pakai musik tren, caption menggoda, dan... satu hal penting yang bakal bikin algoritma suka banget sama konten kamu 😎</p>
     
     <a href="https://www.effectivegatecpm.com/bnr0fg635?key=cfb6707c978f7894439b33d707495919" class="btn">
-      🎥 Lihat Triknya Sekarang
+      🚀 Lihat Rahasianya Sekarang
     </a>
+    
+    <div class="stats">
+      👀 Sudah dilihat oleh <span id="viewCount">0</span> kreator
+    </div>
   </div>
-  
-  <p class="small">*Catatan: ini bukan kursus, tapi trik cepat yang lagi viral di kalangan kreator 2025*</p>
+
+  <div class="comments">
+    <h3>💬 Komentar Kreator Lain:</h3>
+    <div class="comment"><strong>@DinaVlog:</strong> Gila... abis baca ini langsung FYP 3 kali berturut 😭🔥</div>
+    <div class="comment"><strong>@RaflyContent:</strong> Ternyata ini toh rahasianya. Simple tapi nendang!</div>
+    <div class="comment"><strong>@NayaMakeup:</strong> Aku coba tadi sore, hasilnya 20K views 😳 makasih bang!</div>
+  </div>
+
+  <div class="share-btns">
+    <a class="share-btn fb" href="https://www.facebook.com/sharer/sharer.php?u=https://hamami.github.io" target="_blank">📘 Bagikan ke Facebook</a>
+    <a class="share-btn" href="https://api.whatsapp.com/send?text=Coba%20deh%20rahasia%20ini%20biar%20posting%20kamu%20FYP%20tiap%20hari!%20https://hamami.github.io" target="_blank">💚 Share ke WhatsApp</a>
+  </div>
+
+  <p class="small">*Tips ini cuma sementara, sebelum algoritma berubah lagi. Coba sekarang juga!*</p>
+
+<script>
+  // Fungsi statistik realistis
+  const viewElement = document.getElementById("viewCount");
+
+  // Angka awal acak (antara 12.000 - 25.000)
+  let views = Math.floor(12000 + Math.random() * 13000);
+
+  // Fungsi update tampilan angka
+  function updateViewCount() {
+    viewElement.textContent = views.toLocaleString("id-ID");
+  }
+
+  updateViewCount();
+
+  // Tambahkan jumlah views setiap 2–5 detik (acak)
+  setInterval(() => {
+    const increment = Math.floor(Math.random() * 7) + 3; // tambah 3–10 tiap kali
+    views += increment;
+    updateViewCount();
+  }, Math.floor(Math.random() * 3000) + 2000); // setiap 2–5 detik
+</script>
 </body>
 </html>
